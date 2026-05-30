@@ -1,83 +1,62 @@
 Deepfake Image Detection Tool
-Overview
+📌 Overview
 
-This project is a Deepfake Image Detection Tool that analyzes images and predicts whether they are real or AI-generated/manipulated (deepfake) using a trained machine learning/deep learning model.
+Deepfake Image Detection Tool is a machine learning application that identifies whether an image is authentic or AI-generated/manipulated. The model analyzes visual patterns and artifacts commonly found in deepfake images and provides a prediction with a confidence score.
 
-Features
-Upload an image for analysis.
-Detect AI-generated or manipulated images.
-Confidence score for predictions.
-User-friendly interface.
-Fast image processing.
-Tech Stack
+🚀 Features
+Detects real and deepfake images
+Confidence score for predictions
+Simple and user-friendly interface
+Fast image processing
+Supports common image formats (JPG, PNG, JPEG)
+🛠️ Tech Stack
 Python
 TensorFlow / PyTorch
 OpenCV
 NumPy
-Flask / FastAPI (Backend)
-HTML, CSS, JavaScript (Frontend)
-Project Structure
+Flask / FastAPI
+HTML, CSS, JavaScript
+📂 Project Structure
 deepfake-image-detector/
 │
 ├── model/
-│   └── deepfake_model.h5
-│
 ├── dataset/
-│
 ├── static/
-│
 ├── templates/
-│
 ├── app.py
 ├── train.py
-├── predict.py
 ├── requirements.txt
 └── README.md
-Installation
-Clone the repository:
+⚙️ Installation
 git clone https://github.com/your-username/deepfake-image-detector.git
 cd deepfake-image-detector
-Create a virtual environment:
-python -m venv venv
-Activate the virtual environment:
-# Windows
-venv\Scripts\activate
-
-# Linux/Mac
-source venv/bin/activate
-Install dependencies:
 pip install -r requirements.txt
-Running the Application
+▶️ Run Locally
 python app.py
 
-The application will start at:
+Open your browser and visit:
 
 http://localhost:5000
-Usage
-Open the application in your browser.
+📸 How It Works
 Upload an image.
-Click Detect.
-View the prediction:
+The image is preprocessed.
+The trained model analyzes the image.
+The system predicts:
 Real Image
 Deepfake Image
-Check the confidence score.
-Model Training
-
-To train the model on your dataset:
-
-python train.py
-Example Output
+A confidence score is displayed.
+📊 Example Output
 Prediction: Deepfake
-Confidence: 96.4%
-Future Improvements
-Video deepfake detection.
-Explainable AI visualizations.
-Real-time webcam detection.
-Support for multiple image formats.
-Contributing
+Confidence: 94.7%
+🔮 Future Improvements
+Deepfake video detection
+Real-time webcam analysis
+Improved model accuracy
+Explainable AI visualizations
+🤝 Contributing
 
-Contributions are welcome. Feel free to fork the repository and submit a pull request.
+Contributions, issues, and feature requests are welcome.
 
-License
+📜 License
 
 This project is licensed under the MIT License.
